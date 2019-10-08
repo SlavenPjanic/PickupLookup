@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileUpdateActivity">
+
+    <EditText
+        android:id="@+id/editTextBio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="16"
+        android:hint="@string/bio"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onSave"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/sports"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupGender" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSoccer"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="64dp"
+        android:text="@string/soccer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSports" />
+
+    <CheckBox
+        android:id="@+id/checkBoxBaseball"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/baseball"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxSoccer"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSports" />
+
+    <CheckBox
+        android:id="@+id/checkBoxHockey"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="64dp"
+        android:text="@string/hockey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxSoccer" />
+
+    <CheckBox
+        android:id="@+id/checkBoxOther"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:text="@string/other"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxHockey" />
+
+    <CheckBox
+        android:id="@+id/checkBoxFlagFootball"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:text="@string/flagFootball"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxOther"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxBasketball" />
+
+    <CheckBox
+        android:id="@+id/checkBoxBasketball"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/basketball"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxHockey"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/checkBoxBaseball" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupSkill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textViewSkill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/skill"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonBeginner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/beginner" />
+
+        <RadioButton
+            android:id="@+id/radioButtonAmateur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/amateur" />
+
+        <RadioButton
+            android:id="@+id/radioButtonExpert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/expert" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:ems="5"
+        android:hint="@string/age"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroupGender"
+        app:layout_constraintHorizontal_bias="0.206"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAge" />
+
+    <TextView
+        android:id="@+id/textViewAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/age"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroupGender"
+        app:layout_constraintHorizontal_bias="0.008"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextBio" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupGender"
+        android:layout_width="117dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.768"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextBio">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gender"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/male" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFemale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/female" />
+    </RadioGroup>
+
+<!--    <Spinner-->
+<!--        android:id="@+id/spinnerBaseball"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        tools:layout_editor_absoluteX="-1dp"-->
+<!--        tools:layout_editor_absoluteY="522dp" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

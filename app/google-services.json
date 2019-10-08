@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "31407063524",
+    "firebase_url": "https://pickuplookup-dca2c.firebaseio.com",
+    "project_id": "pickuplookup-dca2c",
+    "storage_bucket": "pickuplookup-dca2c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:31407063524:android:bcd893809d4bdb6b3e87f1",
+        "android_client_info": {
+          "package_name": "com.example.pickuplookup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "31407063524-g38oifvcfeo0807inj1qf8v00g239akj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pickuplookup",
+            "certificate_hash": "7024b6c0482173c274ff198b1dc4768b9f7ce853"
+          }
+        },
+        {
+          "client_id": "31407063524-09ib47450d3dh2dhbpebjicjtdiq867v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6_sZ3AXuESJiBejnYcHy96sJR18dkCFs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "31407063524-09ib47450d3dh2dhbpebjicjtdiq867v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
